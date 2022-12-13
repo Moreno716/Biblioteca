@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-</head>
-<body>
-    Lista de libros
-    <?php print_r($libros); ?>  
-    <div class="container">
+<?=$cabecera?>
+
+<a class="btn btn-success" href="<?=base_url('crear')?>">Crear un libro</a>
+<br><br>
         <table class="table table-light">
             <thead class="thead-light">
                 <tr>
@@ -26,15 +17,23 @@
 
                 <tr>
                     <td><?=$libro['id'];?></td>
-                    <td><?=$libro['imagen'];?></td>
+                    <td>
+                        <img class="img-thumbnail" src="<?=base_url()?>/uploads/<?=$libro['imagen'];?>"
+                        width="100" alt="">
+                    </td>
+
                     <td><?=$libro['nombre'];?></td>
-                    <td>Editar/Borrar</td>
+
+                    <td>
+                    <a href="<?=base_url('editar/'.$libro['id']);?>" class="btn btn-info" type="button">Editar</a>
+                        
+                    <a href="<?=base_url('borrar/'.$libro['id']);?>" class="btn btn-danger" type="button">Borrar</a>
+                    </td>
+
                 </tr>
 
             <?php endforeach; ?>
                 
             </tbody>
         </table>
-    </div>
-</body>
-</html>
+<?=$pie?>

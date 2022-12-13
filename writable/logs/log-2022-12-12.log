@@ -1,0 +1,33 @@
+CRITICAL - 2022-12-12 09:09:26 --> Undefined variable $cabecera
+in APPPATH\Views\libros\listar.php on line 1.
+ 1 APPPATH\Views\libros\listar.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\libros\\listar.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\libros\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('libros/listar', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('libros/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 14:49:19 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getFile
+in APPPATH\Controllers\Libros.php on line 32.
+ 1 APPPATH\Controllers\Libros.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getFile', 'APPPATH\\Controllers\\Libros.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Libros->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 15:14:32 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getFile
+in APPPATH\Controllers\Libros.php on line 32.
+ 1 APPPATH\Controllers\Libros.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getFile', 'APPPATH\\Controllers\\Libros.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Libros->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 15:43:33 --> unlink(../public/uploads/imagenPHP.jpg): No such file or directory
+in APPPATH\Controllers\Libros.php on line 49.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/imagenPHP.jpg): No such file or directory', 'APPPATH\\Controllers\\Libros.php', 49)
+ 2 APPPATH\Controllers\Libros.php(49): unlink('../public/uploads/imagenPHP.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Libros->borrar('2')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
